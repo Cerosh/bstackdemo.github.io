@@ -25,4 +25,5 @@ Even though the script uses various Playwright APIs to interact with the webpage
 7. The script is designed to test a single data set and does not account for parameterisation or different input scenarios. The script cannot easily be used to test various data sets or edge cases.
 
 8. The script does a lot of work within a single test function. It includes navigation, user interactions, and assertions. This makes the script harder to read, maintain, and debug.
-The URL is hardcoded in the script, which makes it less flexible if you need to test against different environments (e.g., staging, production). The script cannot easily switch between different environments.
+
+9. The URL is hardcoded in the script, which makes it less flexible if you need to test against different environments (e.g., staging, production). The script cannot easily switch between different environments.
