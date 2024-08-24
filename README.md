@@ -19,7 +19,7 @@ Even though the script uses various Playwright APIs to interact with the webpage
 
 4. The test report is crowded, with all actions shown together, so it will take work to read in case of a failure. 
 
-5. Grouped the tests and utilised a hook for state handling between tests, but as a cost, had to create the same object twice, which resulted in code duplication.
+5. Tests can be grouped under a description and utilised a hook for state handling between tests, but as a cost, the same object had to be created twice, which resulted in code duplication.
 
 6. Selectors have been moved to the respective pages using Page Object, which will ease the updating, but they still use the HTML structure.
 
