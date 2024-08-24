@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@fixtures/*": ["fixture/*"],
+      "@fixtures": ["fixture/index.ts"],
       "@base": ["tests/base.ts"],
       "@pom/*": ["page_object_model/*"]
     }

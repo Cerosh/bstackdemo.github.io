@@ -1,16 +1,12 @@
 import { mergeTests } from "@playwright/test";
-
-import { homePageFixture } from "@fixtures/homePage.fixture";
-import { signinFixture } from "@fixtures/signin.fixture";
-import { checkOutFixture } from "@fixtures/checkout.fixture";
-import { confirmationFixture } from "@fixtures/confirmation.fixture";
+import * as allFixtures from "@fixtures";
 
 // Combine all individual fixtures
 export const test = mergeTests(
-  homePageFixture,
-  signinFixture,
-  checkOutFixture,
-  confirmationFixture
+  allFixtures.homePageFixture,
+  allFixtures.signinFixture,
+  allFixtures.checkOutFixture,
+  allFixtures.confirmationFixture
 );
 export { expect } from "@playwright/test";
 export function step(stepName?: string) {
