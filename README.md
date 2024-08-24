@@ -1,21 +1,28 @@
 # bstackdemo.github.io
 
-Functionality: Place an order for iPhone 12 Pro in the bstackdemo
+**Functionality**: Place an order for iPhone 12 Pro in the bstackdemo
 
-Steps
-Navigate to the website, click on an item's "Add to cart" button, and click on the "Checkout" button.
-Click on the username input field and select the option from the dropdown list. Click on the password input field and then select the option from the dropdown list.
-Click on the "Log In" button, fill in the personal information, and click the "Submit" button.
-Finally, the script asserts that the message for the order placed is visible.
+**Steps**
+1. Navigate to the website, click on an item's "Add to cart" button, and click on the "Checkout" button.
+2. Click on the username input field and select the option from the dropdown list. Click on the password input field and then select the option from the dropdown list.
+3. Click the "Log In" button, fill in the personal information, and click the "Submit" button.
+4. Finally, the script asserts that the message for the order placed is visible.
 
-Limitations
-Even though the script uses various Playwright APIs to interact with the webpage, there are some areas for improvement.
-The test data is not dynamic; therefore, any changes would necessitate script modification, diminishing the flexibility of the test scripts because the data is linked to a specific scenario. Furthermore, confidential details such as usernames and passwords might be exposed within the source code.
-The script doesn't include any error handling or recovery mechanisms. If an action fails (e.g., an element is not found), the script will likely stop executing or fail abruptly. Lack of error handling can lead to incomplete test runs or misleading results if a failure occurs.
-The user name and password are dropdown but not identified using those specialised selectors.
-The test report is crowded, with all actions shown together, so it will not be easy to read in case of a failure.
-The script does not address any maintenance or state handling between tests. If tests are executed one after the other, any remaining data from a previous test could impact the next one. Failing to manage clean-up could result in inconsistent tests and untrustworthy outcomes.
-The script uses hardcoded selectors, which might be brittle and prone to breaking if the application's HTML structure changes. Changes in the application's UI can cause the test to fail if selectors are not updated accordingly.
-The script is designed to test a single data set and does not account for parameterisation or different input scenarios. The script cannot easily be used to test various data sets or edge cases.
-The script does a lot of work within a single test function. It includes navigation, user interactions, and assertions. This makes the script harder to read, maintain, and debug.
-The URL is hardcoded in the script, which makes it less flexible if you need to test against different environments (e.g., staging, production). The script cannot easily switch between different environments.
+**Limitations**
+Even though the script uses various Playwright APIs to interact with the webpage, there are some areas for improvement. 
+
+1. The test data can be passed from the test, but changes would still necessitate a script update. Also, confidential details are exposed in the source code.
+
+2. The script doesn't include any error handling or recovery mechanisms. If an action fails (e.g., an element is not found), the script will likely stop executing or fail abruptly. Lack of error handling can lead to incomplete test runs or misleading results if a failure occurs. 
+
+3. The user name and password are dropdown but need to be identified using those specialised selectors. 
+
+4. The test report is crowded, with all actions shown together, so it will take work to read in case of a failure. 
+
+5. Tests can be grouped under a description and utilised a hook for state handling between tests, but as a cost, the same object had to be created twice, which resulted in code duplication.
+
+6. Selectors have been moved to the respective pages using Page Object, which will ease the updating, but they still use the HTML structure.
+
+7. The segmentation of concern was implemented, but it remains challenging to read because the test script still includes object creation for each page.
+
+8. The URL is moved to config, but switching between different environments requires more changes.
