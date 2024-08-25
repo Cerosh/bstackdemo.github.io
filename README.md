@@ -1,4 +1,6 @@
 # bstackdemo.github.io
+**Introduction**
+This is a project to showcase the evolution of the Playwright test automation framework and its integration into various tools. The framework's maturity is improved at six levels, starting with level 0, which denotes no framework, and level 6, which denotes a matured test automation framework. The test case used across each level is the same, and the steps are as follows. I have stored the code for each level in a branch named after the maturity level. I have listed the tools integrated into this framework below.
 
 **Steps**
 1. Navigate to the website, click on an item's "Add to cart" button, and click on the "Checkout" button.
