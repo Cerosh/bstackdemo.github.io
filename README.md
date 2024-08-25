@@ -7,3 +7,6 @@ This is a project to showcase the evolution of the Playwright test automation fr
 2. Click on the username input field and select the option from the dropdown list. Click on the password input field and then select the option from the dropdown list.
 3. Click on the "Log In" button, fill in the personal information, and click the "Submit" button.
 4. Finally, the script asserts that the message for the order placed is visible.
+
+ **Tools Integrated**  
+![playwrightWorkFlow](https://github.com/user-attachments/assets/055c377d-c69a-4414-9657-7b7b574a2020)
