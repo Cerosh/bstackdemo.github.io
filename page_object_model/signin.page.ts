@@ -14,7 +14,11 @@ export default class SignIn {
     this.logInButton = this.page.getByRole("button", { name: "Log In" });
   }
   @step("Sign in to Browser Stack with credentials")
-  async signinToBStack(userName: string, password: string) {
+  async signinToBStack(userName: string) {
+    let password: string;
+    if (userName === "demouser") {
+      password = process.env.DEMO_USER_PASSWORD;
+    }
     await this.userNameTextBox.click();
     await this.page.getByText(userName, { exact: true }).click();
     await this.passwordTextBox.click();
