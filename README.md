@@ -2,7 +2,7 @@
 
 **Functionality**: Place an order for iPhone 12 Pro in the bstackdemo
 
-**Features**
+**Features**:
 - POM separates page elements and interactions from test logic, making code more modular and test cases more human-readable.
 - When page elements change, modifications can be made centrally in the POM, minimizing the impact on existing test cases.
 - POM enables the definition and reuse of common page elements and interactions across multiple test cases, reducing code duplication. It also allows creating custom actions within the POM to encapsulate complex interactions, making test code more concise and reusable.
