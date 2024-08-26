@@ -4,12 +4,12 @@
 
 **Features**
 - POM separates page elements and interactions from test logic, making code more modular and test cases more human-readable.
-When page elements change, modifications can be made centrally in the POM, minimizing the impact on existing test cases.
-POM enables the definition and reuse of common page elements and interactions across multiple test cases, reducing code duplication. It also allows creating custom actions within the POM to encapsulate complex interactions, making test code more concise and reusable.
-Defining page elements in one place ensures consistency and reduces the risk of incorrect element references. POM helps prevent flaky tests caused by changes in the page structure, as modifications are typically made in a centralized location.
-POM encourages the use of descriptive page names for easy understanding. Test cases can be written more human-readable, focusing on actions rather than technical details.
-POM facilitates the storage and management of test data, making it easier to maintain and update data across multiple test cases. It also allows for data-driven testing with different data sets.
-POM helps create a shared understanding of the application's structure and interactions among team members. It also makes maintaining and updating the codebase easier when multiple developers work on the test suite.
+- When page elements change, modifications can be made centrally in the POM, minimizing the impact on existing test cases.
+- POM enables the definition and reuse of common page elements and interactions across multiple test cases, reducing code duplication. It also allows creating custom actions within the POM to encapsulate complex interactions, making test code more concise and reusable.
+- Defining page elements in one place ensures consistency and reduces the risk of incorrect element references. POM helps prevent flaky tests caused by changes in the page structure, as modifications are typically made in a centralized location.
+- POM encourages the use of descriptive page names for easy understanding. Test cases can be written more human-readable, focusing on actions rather than technical details.
+- POM facilitates the storage and management of test data, making it easier to maintain and update data across multiple test cases. It also allows for data-driven testing with different data sets.
+- POM helps create a shared understanding of the application's structure and interactions among team members. It also makes maintaining and updating the codebase easier when multiple developers work on the test suite.
 
 **Limitations**:
 
