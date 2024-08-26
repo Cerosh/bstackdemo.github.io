@@ -9,7 +9,7 @@ test.describe("Validate ordering functionality", () => {
     checkOutPage,
     confirmationPage,
   }) => {
-    await homePage.checkOutItem();
+    await homePage.checkOutItem("iPhone 12 Mini");
     await signInPage.signinToBStack("demouser", "testingisfun99");
     await checkOutPage.enterShippingAddress();
     await confirmationPage.assertTheShippingAddressHeading();
