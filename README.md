@@ -2,6 +2,15 @@
 
 **Functionality**: Place an order for iPhone 12 Pro in the bstackdemo
 
+**Features**:
+- The Suite leverages Playwright's organized folder structure and incorporates Playwright keywords to streamline test case definitions.
+- Integration with GitHub Workflow enhances continuous integration and delivery processes, automating the testing pipeline seamlessly.
+- The Suite utilizes Playwright's built-in identifiers, such as getByText(), getByRole(), and getByLabel(), to ensure precise element targeting and interaction.
+- Full advantage of Playwright's built-in assertions is taken for reliable validation of test outcomes.
+- The Suite supports fully parallel test execution and allows retries to enhance test reliability.
+- Multiple browsers are accommodated for extensive cross-browser testing.
+- Additionally, the Suite features an HTML reporter for clear and comprehensive test result visualization and collects traces when retrying failed tests to aid in debugging and issue resolution.
+
 **Limitations**
 Even though the script uses various Playwright APIs to interact with the webpage, there are some areas for improvement.
 1. The test data is not dynamic; therefore, any changes would necessitate script modification, diminishing the flexibility of the test scripts because the data is linked to a specific scenario. Furthermore, confidential details such as usernames and passwords might be exposed within the source code.
