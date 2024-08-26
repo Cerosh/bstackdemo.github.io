@@ -2,7 +2,7 @@
 
 **Functionality**: Place an order for iPhone 12 Pro in the bstackdemo
 
-**Limitations**
+**Limitations**:
 
 1. The test data can be passed from the test, but changes would still necessitate a script update. Also, confidential details are exposed in the source code.
 
