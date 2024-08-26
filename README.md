@@ -3,7 +3,6 @@
 **Functionality**: Place an order for iPhone 12 Pro in the bstackdemo
 
 **Limitations**
-Even though the script uses various Playwright APIs to interact with the webpage, there are some areas for improvement. 
 
 1. The test data can be passed from the test, but changes would still necessitate a script update. Also, confidential details are exposed in the source code.
 
