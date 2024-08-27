@@ -1,5 +1,5 @@
 import { Locator, Page, expect } from "@playwright/test";
-import { step } from "@base";
+import { assertItemNameByRole } from "utils/assertItemByRole";
 
 export default class Confirmation {
   readonly page: Page;
@@ -10,13 +10,15 @@ export default class Confirmation {
       "confirmation-message"
     );
   }
-  @step(
-    "Assert the shipping address heading is visible after the checkout process."
-  )
+
   async assertTheShippingAddressHeading() {
     await expect(
       this.confirmationMessageLabel,
       "The shipping address heading should be displayed."
     ).toBeVisible();
+  }
+
+  async assertItemInConfirmation(itemName: string) {
+    await assertItemNameByRole(this.page, itemName);
   }
 }

@@ -9,9 +9,12 @@ test.describe("Validate ordering functionality", () => {
     checkOutPage,
     confirmationPage,
   }) => {
-    await homePage.addItemAndCheckout("iPhone 12 Mini");
+    const itemName = "iPhone 12 Mini";
+    await homePage.addItemAndCheckout(itemName);
     await signInPage.signinToBStack("demouser");
+    await checkOutPage.assertItemInCheckout(itemName);
     await checkOutPage.enterShippingAddress();
     await confirmationPage.assertTheShippingAddressHeading();
+    await confirmationPage.assertItemInConfirmation(itemName);
   });
 });
