@@ -17,6 +17,7 @@ export default class CheckOut {
     for (const [label, value] of Object.entries(this.demoUser)) {
       await fillFieldByLabel(this.page, label, value);
     }
+
     await this.page.getByRole("button", { name: "Submit" }).click();
   }
 
