@@ -6,9 +6,9 @@
 - Individual page fixtures to facilitate the object creation specific to each page, enhancing modularity and reusability while ensuring precise and reliable testing.
 - An index page has been added to export all fixtures at once, making managing fixtures with a single access point easier, improving organization, and reducing the risk of missing fixtures for pages.
 - A base file has been created to centralize common tasks shared across the framework. Functionalities include:
-- Utilized Playwright’s mergeTest feature to combine all fixtures into a unified test context.
-- Implemented a decorator feature in TypeScript to create a step function that annotates each test step.
-Allow test files to access the assertion library directly from the base file, reducing the need for repetitive import statements.
+   - Utilized Playwright’s mergeTest feature to combine all fixtures into a unified test context.
+   - Implemented a decorator feature in TypeScript to create a step function that annotates each test step.
+   - Allow test files to access the assertion library directly from the base file, reducing the need for repetitive import statements.
 - The tsconfig.json file defines paths to streamline module resolution, simplify import paths, and reduce path-related errors in the project.
 - Hooks have been introduced to execute the setup code before each test. This feature ensures that each test starts with a clean and consistent state, improving test reliability and reducing the risk of test flakiness caused by residual data from previous tests.
 
