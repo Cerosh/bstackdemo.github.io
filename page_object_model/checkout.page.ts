@@ -1,6 +1,7 @@
 import { Page } from "@playwright/test";
 import { step } from "@base";
 import { UserGenerator } from "utils/user";
+import { fillFieldByLabel } from "utils/fillFieldByLabel";
 
 export default class CheckOut {
   readonly page: Page;
@@ -10,13 +11,11 @@ export default class CheckOut {
     this.demoUser = UserGenerator.generateDemoUser();
   }
 
-  @step("Enter the billing address")
+  @step("Enter billing address using dynamically generated user details.")
   async enterShippingAddress() {
-    await this.page.getByLabel("First Name").fill(this.demoUser.firstname);
-    await this.page.getByLabel("Last Name").fill(this.demoUser.lastname);
-    await this.page.getByLabel("Address").fill(this.demoUser.address);
-    await this.page.getByLabel("State/Province").fill(this.demoUser.state);
-    await this.page.getByLabel("Postal Code").fill(this.demoUser.postalCode);
+    for (const [label, value] of Object.entries(this.demoUser)) {
+      await fillFieldByLabel(this.page, label, value);
+    }
     await this.page.getByRole("button", { name: "Submit" }).click();
   }
 }

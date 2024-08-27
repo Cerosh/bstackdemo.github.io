@@ -3,26 +3,53 @@ import { step } from "@base";
 
 export default class SignIn {
   readonly page: Page;
-  readonly userNameTextBox: Locator;
-  readonly passwordTextBox: Locator;
+  readonly userNameDropDown: Locator;
+  readonly passwordDropDown: Locator;
   readonly logInButton: Locator;
 
   constructor(page: Page) {
     this.page = page;
-    this.userNameTextBox = this.page.getByTestId("username");
-    this.passwordTextBox = this.page.getByTestId("password");
+    this.userNameDropDown = this.page.getByTestId("username");
+    this.passwordDropDown = this.page.getByTestId("password");
     this.logInButton = this.page.getByRole("button", { name: "Log In" });
   }
-  @step("Sign in to Browser Stack with credentials")
-  async signinToBStack(userName: string) {
-    let password: string;
+  private async getPasswordForUser(userName: string): Promise<string> {
     if (userName === "demouser") {
-      password = process.env.DEMO_USER_PASSWORD;
+      const password = process.env.DEMO_USER_PASSWORD;
+      if (!password) {
+        throw new Error("Environment variable DEMO_USER_PASSWORD is not set.");
+      }
+      return password;
     }
-    await this.userNameTextBox.click();
-    await this.page.getByText(userName, { exact: true }).click();
-    await this.passwordTextBox.click();
-    await this.page.getByText(password, { exact: true }).click();
-    await this.logInButton.click();
+    throw new Error(`No password configured for user: ${userName}`);
+  }
+
+  private async selectUserCredential(
+    locator: Locator,
+    text: string
+  ): Promise<void> {
+    try {
+      await locator.click();
+      await this.page.getByText(text, { exact: true }).click();
+    } catch (error) {
+      console.error(
+        `Failed to select user credential with text "${text}":`,
+        error
+      );
+      throw error;
+    }
+  }
+
+  @step("Sign in to Browser Stack as")
+  async signinToBStack(userName: string) {
+    try {
+      const password = await this.getPasswordForUser(userName);
+      await this.selectUserCredential(this.userNameDropDown, userName);
+      await this.selectUserCredential(this.passwordDropDown, password);
+      await this.logInButton.click();
+    } catch (error) {
+      console.error("Sign-in failed:", error);
+      throw error;
+    }
   }
 }

@@ -10,8 +10,13 @@ export default class Confirmation {
       "confirmation-message"
     );
   }
-  @step("Assert visiblity of shipping address heading.")
+  @step(
+    "Assert the shipping address heading is visible after the checkout process."
+  )
   async assertTheShippingAddressHeading() {
-    await expect(this.confirmationMessageLabel).toBeVisible();
+    await expect(
+      this.confirmationMessageLabel,
+      "The shipping address heading should be displayed."
+    ).toBeVisible();
   }
 }

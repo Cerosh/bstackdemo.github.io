@@ -2,19 +2,19 @@ import { faker } from "@faker-js/faker/locale/en_AU";
 
 export namespace UserGenerator {
   export interface Demouser {
-    firstname: string;
-    lastname: string;
-    address: string;
-    state: string;
-    postalCode: string;
+    "First Name": string;
+    "Last Name": string;
+    Address: string;
+    "State/Province": string;
+    "Postal Code": string;
   }
   export function generateDemoUser(): Demouser {
     return {
-      firstname: faker.person.firstName(),
-      lastname: faker.person.lastName(),
-      address: faker.location.streetAddress(),
-      state: faker.location.state(),
-      postalCode: faker.location.zipCode(),
+      "First Name": faker.person.firstName(),
+      "Last Name": faker.person.lastName(),
+      Address: faker.location.streetAddress(),
+      "State/Province": faker.location.state(),
+      "Postal Code": faker.location.zipCode(),
     };
   }
 }

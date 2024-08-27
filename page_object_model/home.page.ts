@@ -15,14 +15,31 @@ export default class Home {
         .filter({ has: this.itemTitle(itemName) })
         .getByText("Add to cart");
   }
-
-  private addItemToCart = async (itemName: string): Promise<void> => {
-    await this.addToCartButton(itemName).click();
+  private getAddToCartButton = async (itemName: string): Promise<Locator> => {
+    return this.addToCartButton(itemName);
   };
 
-  @step("Add item to cart and Checkout.")
-  async checkOutItem(itemName: string) {
-    await this.addItemToCart(itemName);
-    await this.page.getByText("Checkout").click();
+  private async clickAddToCartButton(itemName: string): Promise<void> {
+    try {
+      const button = await this.getAddToCartButton(itemName);
+      await button.click();
+    } catch (error) {
+      console.error(`Failed to add item "${itemName}" to cart:`, error);
+      throw error;
+    }
+  }
+
+  @step("Add item to cart and proceed to checkout.")
+  async addItemAndCheckout(itemName: string) {
+    try {
+      await this.clickAddToCartButton(itemName);
+      await this.page.getByText("Checkout").click();
+    } catch (error) {
+      console.error(
+        `Failed to complete checkout for item "${itemName}":`,
+        error
+      );
+      throw error;
+    }
   }
 }
