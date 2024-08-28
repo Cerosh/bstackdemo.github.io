@@ -8,7 +8,7 @@ This is a project to showcase the evolution of the Playwright test automation fr
 3. Click on the "Log In" button, fill in the personal information, and click the "Submit" button.
 4. Finally, the script asserts that the message for the order placed is visible.
 
-**Levels**
+# Levels
 [Level 0](https://github.com/Cerosh/bstackdemo.github.io/tree/level.0)
 
  **Tools Integrated**  
