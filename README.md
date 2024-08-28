@@ -10,6 +10,12 @@ This is a project to showcase the evolution of the Playwright test automation fr
 
 **Levels**
 1. [Level 0](https://github.com/Cerosh/bstackdemo.github.io/tree/level.0)
+2. [Level 1](https://github.com/Cerosh/bstackdemo.github.io/tree/level.1)
+3. [Level 2](https://github.com/Cerosh/bstackdemo.github.io/tree/level.2)
+4. [Level 3](https://github.com/Cerosh/bstackdemo.github.io/tree/level.3)
+5. [Level 4](https://github.com/Cerosh/bstackdemo.github.io/tree/level.4)
+6. [Level 5](https://github.com/Cerosh/bstackdemo.github.io/tree/level.5)
+7. [Final Report](https://Cerosh.github.io/bstackdemo.github.io)
 
  **Tools Integrated**  
 ![playwrightWorkFlow](https://github.com/user-attachments/assets/055c377d-c69a-4414-9657-7b7b574a2020)
