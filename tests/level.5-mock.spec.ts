@@ -1,14 +1,14 @@
 import { test } from "@base";
 import iPhone from "../data/phone_db.json";
 
-test.describe("Validate ordering functionality", () => {
+test.describe("Validate ordering functionality using mock", () => {
   test.beforeEach(async ({ page }) => {
     await page.route(`./api/products`, async (route) => {
       await route.fulfill({ body: JSON.stringify(iPhone) });
     });
     await page.goto("/");
   });
-  test("Place an order for iPhone 12 Pro in the bstackdemo", async ({
+  test("Place an order for iPhone 15(mock) in the bstackdemo", async ({
     homePage,
     signInPage,
     checkOutPage,
