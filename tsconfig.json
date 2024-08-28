@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
     "paths": {
       "@fixtures": ["fixture/index.ts"],
       "@base": ["tests/base.ts"],

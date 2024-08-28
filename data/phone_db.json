@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "availableSizes": ["Apple"],
+      "currencyFormat": "$",
+      "currencyId": "USD",
+      "description": "iPhone 12",
+      "id": 1,
+      "installments": 9,
+      "isFav": false,
+      "price": 799,
+      "sku": "iPhone12-device-info.png",
+      "title": "iPhone 15"
+    }
+  ]
+}
