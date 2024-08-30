@@ -27,7 +27,7 @@ Even though the script uses various Playwright APIs to interact with the webpage
 
 7. The script is designed to test a single data set and does not account for parameterisation or different input scenarios. The script cannot easily be used to test various data sets or edge cases.
 
-8. The script does a lot of work within a single test function. It includes navigation, user interactions, and assertions. This makes the script harder to read, maintain, and debug.
+8. The script does a lot of work within a single test function, including navigation, user interactions, and assertions. This makes the script harder to read, maintain, and debug.
 
 9. The URL is hardcoded in the script, which makes it less flexible if you need to test against different environments (e.g., staging, production). The script cannot easily switch between different environments.
 #
@@ -35,12 +35,13 @@ Even though the script uses various Playwright APIs to interact with the webpage
 
 <table>
   <tr>
-    <td>[Level 0](https://github.com/Cerosh/bstackdemo.github.io/tree/level.0)</td>
-    <td>[Level 1](https://github.com/Cerosh/bstackdemo.github.io/tree/level.1)</td>
-    <td>[Level 2](https://github.com/Cerosh/bstackdemo.github.io/tree/level.2)</td>
-    <td>[Level 3](https://github.com/Cerosh/bstackdemo.github.io/tree/level.3)</td>
-    <td>[Level 4](https://github.com/Cerosh/bstackdemo.github.io/tree/level.4)</td>
-    <td>[Level 5](https://github.com/Cerosh/bstackdemo.github.io/tree/level.5)</td>
-    <td>[Final Report](https://Cerosh.github.io/bstackdemo.github.io)</td>
+    <td><a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.0">Level 0</a></td>
+    <td><a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.1">Level 1</a></td>
+    <td><a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.2">Level 2</a></td>
+    <td><a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.3">Level 3</a></td>
+    <td><a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.4">Level 4</a></td>
+    <td><a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.5">Level 5</a></td>
+    <td><a href="https://Cerosh.github.io/bstackdemo.github.io">Final Report</a></td>
   </tr>
 </table>
+
