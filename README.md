@@ -23,3 +23,15 @@
 4. Selectors have been moved to the respective pages using Page Object, which will ease the updating, but they still use the HTML structure.
 
 5. The URL is moved to config, but switching between different environments requires more changes.
+#
+<table>
+  <tr>
+    <td><a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.0">Level 0</a></td>
+    <td><a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.1">Level 1</a></td>
+    <td>Level 2</td>
+    <td><a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.3">Level 3</a></td>
+    <td><a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.4">Level 4</a></td>
+    <td><a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.5">Level 5</a></td>
+    <td><a href="https://Cerosh.github.io/bstackdemo.github.io">Final Report</a></td>
+  </tr>
+</table>
