@@ -33,49 +33,14 @@ Even though the script uses various Playwright APIs to interact with the webpage
 #
 [Level 0](https://github.com/Cerosh/bstackdemo.github.io/tree/level.0)          [Level 1](https://github.com/Cerosh/bstackdemo.github.io/tree/level.1)   [Level 2](https://github.com/Cerosh/bstackdemo.github.io/tree/level.2)   [Level 3](https://github.com/Cerosh/bstackdemo.github.io/tree/level.3)   [Level 4](https://github.com/Cerosh/bstackdemo.github.io/tree/level.4)   [Level 5](https://github.com/Cerosh/bstackdemo.github.io/tree/level.5)   [Final Report](https://Cerosh.github.io/bstackdemo.github.io)
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Styling for the links container */
-        .links-container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 10px; /* Adds 10 pixels of space between each link */
-        }
-        
-        /* Styling for all links */
-        .links-container a {
-            text-decoration: none;
-            color: blue; /* Default link color */
-            font-size: 16px;
-            padding: 5px;
-        }
-        
-        /* Highlighted link styling */
-        .links-container a.highlighted {
-            font-weight: bold;
-            color: red; /* Highlight color */
-            background-color: yellow; /* Highlight background */
-            border-radius: 5px;
-            padding: 5px 10px;
-        }
-    </style>
-</head>
-<body>
-    <div class="links-container">
-        <a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.0" class="highlighted">Level 0</a>
-        <a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.1">Level 1</a>
-        <a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.2">Level 2</a>
-        <a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.3">Level 3</a>
-        <a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.4">Level 4</a>
-        <a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.5">Level 5</a>
-        <a href="https://Cerosh.github.io/bstackdemo.github.io">Final Report</a>
-    </div>
-</body>
-</html>
-
-
+<table>
+  <tr>
+    <td>[Level 0](https://github.com/Cerosh/bstackdemo.github.io/tree/level.0)</td>
+    <td>[Level 1](https://github.com/Cerosh/bstackdemo.github.io/tree/level.1)</td>
+    <td>[Level 2](https://github.com/Cerosh/bstackdemo.github.io/tree/level.2)</td>
+    <td>[Level 3](https://github.com/Cerosh/bstackdemo.github.io/tree/level.3)</td>
+    <td>[Level 4](https://github.com/Cerosh/bstackdemo.github.io/tree/level.4)</td>
+    <td>[Level 5](https://github.com/Cerosh/bstackdemo.github.io/tree/level.5)</td>
+    <td>[Final Report](https://Cerosh.github.io/bstackdemo.github.io)</td>
+  </tr>
+</table>
