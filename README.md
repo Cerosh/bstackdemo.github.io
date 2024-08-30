@@ -30,6 +30,5 @@ Even though the script uses various Playwright APIs to interact with the webpage
 8. The script does a lot of work within a single test function. It includes navigation, user interactions, and assertions. This makes the script harder to read, maintain, and debug.
 
 9. The URL is hardcoded in the script, which makes it less flexible if you need to test against different environments (e.g., staging, production). The script cannot easily switch between different environments.
-   
 #
-[Level 0](https://github.com/Cerosh/bstackdemo.github.io/tree/level.0)  [Level 1](https://github.com/Cerosh/bstackdemo.github.io/tree/level.1)  [Level 2](https://github.com/Cerosh/bstackdemo.github.io/tree/level.2)  [Level 3](https://github.com/Cerosh/bstackdemo.github.io/tree/level.3)  [Level 4](https://github.com/Cerosh/bstackdemo.github.io/tree/level.4)  [Level 5](https://github.com/Cerosh/bstackdemo.github.io/tree/level.5)  [Final Report](https://Cerosh.github.io/bstackdemo.github.io)
+[Level 0](https://github.com/Cerosh/bstackdemo.github.io/tree/level.0)   [Level 1](https://github.com/Cerosh/bstackdemo.github.io/tree/level.1)   [Level 2](https://github.com/Cerosh/bstackdemo.github.io/tree/level.2)   [Level 3](https://github.com/Cerosh/bstackdemo.github.io/tree/level.3)   [Level 4](https://github.com/Cerosh/bstackdemo.github.io/tree/level.4)   [Level 5](https://github.com/Cerosh/bstackdemo.github.io/tree/level.5)   [Final Report](https://Cerosh.github.io/bstackdemo.github.io)
