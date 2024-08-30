@@ -32,3 +32,25 @@ Even though the script uses various Playwright APIs to interact with the webpage
 9. The URL is hardcoded in the script, which makes it less flexible if you need to test against different environments (e.g., staging, production). The script cannot easily switch between different environments.
 #
 [Level 0](https://github.com/Cerosh/bstackdemo.github.io/tree/level.0)          [Level 1](https://github.com/Cerosh/bstackdemo.github.io/tree/level.1)   [Level 2](https://github.com/Cerosh/bstackdemo.github.io/tree/level.2)   [Level 3](https://github.com/Cerosh/bstackdemo.github.io/tree/level.3)   [Level 4](https://github.com/Cerosh/bstackdemo.github.io/tree/level.4)   [Level 5](https://github.com/Cerosh/bstackdemo.github.io/tree/level.5)   [Final Report](https://Cerosh.github.io/bstackdemo.github.io)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links with Styling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="links-container">
+        <a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.0" class="highlighted">Level 0</a>
+        <a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.1">Level 1</a>
+        <a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.2">Level 2</a>
+        <a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.3">Level 3</a>
+        <a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.4">Level 4</a>
+        <a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.5">Level 5</a>
+        <a href="https://Cerosh.github.io/bstackdemo.github.io">Final Report</a>
+    </div>
+</body>
+</html>
+
