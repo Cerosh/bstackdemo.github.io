@@ -11,3 +11,15 @@
 
 **Limitations**:
 - The assertion is missing to validate that the selected and checked-out items are identical.
+#
+<table>
+  <tr>
+    <td><a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.0">Level 0</a></td>
+    <td><a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.1">Level 1</a></td>
+    <td><a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.2">Level 2</a></td>
+    <td><a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.3">Level 3</a></td>
+    <td>Level 4</td>
+    <td><a href="https://github.com/Cerosh/bstackdemo.github.io/tree/level.5">Level 5</a></td>
+    <td><a href="https://Cerosh.github.io/bstackdemo.github.io">Final Report</a></td>
+  </tr>
+</table>
