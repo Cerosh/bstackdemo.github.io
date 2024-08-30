@@ -38,8 +38,32 @@ Even though the script uses various Playwright APIs to interact with the webpage
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Links with Styling</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styling for the links container */
+        .links-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px; /* Adds 10 pixels of space between each link */
+        }
+        
+        /* Styling for all links */
+        .links-container a {
+            text-decoration: none;
+            color: blue; /* Default link color */
+            font-size: 16px;
+            padding: 5px;
+        }
+        
+        /* Highlighted link styling */
+        .links-container a.highlighted {
+            font-weight: bold;
+            color: red; /* Highlight color */
+            background-color: yellow; /* Highlight background */
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="links-container">
@@ -53,4 +77,5 @@ Even though the script uses various Playwright APIs to interact with the webpage
     </div>
 </body>
 </html>
+
 
